@@ -1,0 +1,6 @@
+{
+  "name": "Curso IA para Agencias de Viajes",
+  "description": "Landing page interactiva de alta conversión para el Curso de Inteligencia Artificial para Agencias de Viajes con embudo Yape, chatbot inteligente y bono de asesoría VIP.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
