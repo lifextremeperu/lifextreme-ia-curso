@@ -184,9 +184,9 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenCheckout, onOpen
         {/* Trust pill above headline */}
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-[#F1A80A] text-xs sm:text-sm font-semibold mb-6 shadow-inner backdrop-blur-md animate-fade-in">
           <Sparkles className="w-4 h-4 text-[#F1A80A] animate-spin" style={{ animationDuration: '4s' }} />
-          <span className="tracking-wide uppercase text-[11px] sm:text-xs">ENTRENAMIENTO PRÁCTICO 100% PARA EL SECTOR TURISMO</span>
+          <span className="tracking-wide uppercase text-[11px] sm:text-xs">ENTRENAMIENTO PRESENCIAL 100% PRÁCTICO</span>
           <span className="hidden sm:inline-block w-1.5 h-1.5 rounded-full bg-[#F1A80A]" />
-          <span className="hidden sm:inline-block text-slate-400 font-mono text-[11px]">COHORTE 2026</span>
+          <span className="hidden sm:inline-block text-slate-400 font-mono text-[11px]">CUSCO</span>
         </div>
 
         {/* Dynamic Typing Title */}
@@ -202,19 +202,18 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenCheckout, onOpen
 
         {/* Persuasive Subheadline */}
         <p className="max-w-3xl mx-auto text-base sm:text-lg md:text-xl text-slate-300 font-normal leading-relaxed mb-8">
-          El primer entrenamiento intensivo para directores, agencias de viajes y agentes freelance en Perú y Latam.
-          Aprende a desplegar las <strong className="text-[#F1A80A] font-bold">7 Soluciones Operativas de IA</strong> para responder cotizaciones en 30s, cerrar ventas 24/7 en WhatsApp y viralizar tus destinos.
+          El primer entrenamiento intensivo <strong className="text-[#F1A80A] font-bold">Totalmente Práctico Presencial</strong> de 4 días (2.5 horas diarias). Aprende a desplegar las 7 Soluciones Operativas de IA para responder cotizaciones en 30s, cerrar ventas 24/7 en WhatsApp y viralizar tus destinos.
         </p>
 
         {/* Key Highlights Grid */}
         <div className="flex flex-wrap items-center justify-center gap-2.5 sm:gap-4 mb-10 text-xs sm:text-sm text-slate-200">
           <div className="flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm">
             <CheckCircle2 className="w-4 h-4 text-[#F1A80A] shrink-0" />
-            <span>Sin Saber Programar</span>
+            <span>4 Días • 2.5 Horas Diarias</span>
           </div>
           <div className="flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm">
             <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0" />
-            <span>Plantillas de Prompts Listas</span>
+            <span>Local: Av La Cultura 235, Magisterio (3er piso)</span>
           </div>
           <div className="flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-[#F1A80A]/10 border border-[#F1A80A]/30 text-[#F1A80A] font-semibold backdrop-blur-sm">
             <Zap className="w-4 h-4 text-[#F1A80A] shrink-0 fill-[#F1A80A]" />

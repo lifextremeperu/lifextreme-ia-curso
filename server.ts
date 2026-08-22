@@ -29,7 +29,8 @@ Información clave del curso:
   6. Análisis de Mercado Turístico & Detección de Tendencias (predicción de temporadas altas y paquetes ganadores).
   7. Catálogo Web Interactivo y Generación de Itinerarios Personalizados.
 - **🔥 Súper Bono VIP Exclusivo**: 1 MES COMPLETO (30 días) DE ASESORÍA PERSONALIZADA POST-CURSO directa con Engelberth Egoavil para implementar los sistemas en su propia agencia.
-- **Modalidad y Acceso**: Clases 100% online con acceso vitalicio a grabaciones, plantillas de prompts, flujos de automatización y comunidad privada.
+- **Modalidad y Acceso**: ¡NUEVA MODALIDAD PRESENCIAL! El curso es 100% práctico presencial. Dura 4 días, 2.5 horas diarias.
+- **Lugar**: Av. La Cultura 235 en Magisterio, 3er piso (Cusco). Adicionalmente, tendrán acceso a las plantillas de prompts, flujos de automatización y comunidad privada.
 - **Método de Pago Oficial**: Pago por Yape (Perú) al número +51 958050928 (Titular: Engelberth Egoavil) y envío de voucher vía WhatsApp para activación inmediata.
 - **Inversión**: Oferta especial de lanzamiento con 70% de descuento (Precio regular S/ 490, Oferta Especial S/ 147 PEN o $39 USD para estudiantes internacionales).
 

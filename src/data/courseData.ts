@@ -333,8 +333,8 @@ export const FAQ_ITEMS: FaqItem[] = [
   {
     id: 'faq-4',
     category: 'temario',
-    question: '¿Qué pasa si no puedo asistir a las clases en los horarios en vivo?',
-    answer: 'No te preocupes. Todas las sesiones quedan grabadas en alta definición y alojadas en nuestra plataforma exclusiva con acceso vitalicio. Podrás verlas a tu propio ritmo cuantas veces quieras desde cualquier dispositivo.',
+    question: '¿Qué pasa si no puedo asistir a las clases presenciales todos los días?',
+    answer: 'Al ser un taller intensivo y 100% práctico, te recomendamos asistir los 4 días. Sin embargo, si faltas a una sesión, te daremos acceso al material de apoyo digital y a las plantillas de prompts para que puedas aplicarlo en tu agencia, además del soporte VIP de 1 mes.',
   },
   {
     id: 'faq-5',

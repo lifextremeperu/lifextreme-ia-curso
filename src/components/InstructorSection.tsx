@@ -54,7 +54,7 @@ export const InstructorSection: React.FC<InstructorProps> = ({ onOpenCheckout })
             </h2>
 
             <p className="text-slate-300 text-sm sm:text-base leading-relaxed mb-6">
-              Hola, soy <strong>Engelberth Egoavil</strong>. He dedicado los últimos años a integrar sistemas avanzados de Inteligencia Artificial en empresas y agencias de turismo. Conozco de primera mano el dolor de perder clientes por demorar 2 horas en una cotización o no responder a tiempo un WhatsApp un domingo por la noche.
+              Hola, soy <strong>Engelberth Egoavil</strong>. He dedicado los últimos años a integrar sistemas avanzados de Inteligencia Artificial en empresas y agencias de turismo. Conozco de primera mano el dolor de perder clientes por demorar 2 horas en una cotización o no responder a tiempo un WhatsApp un domingo por la noche. Durante estos 4 días presenciales, te transmitiré toda mi experiencia práctica.
             </p>
 
             <p className="text-slate-300 text-sm sm:text-base leading-relaxed mb-6">
@@ -87,8 +87,16 @@ export const InstructorSection: React.FC<InstructorProps> = ({ onOpenCheckout })
                 onClick={onOpenCheckout}
                 className="px-6 py-3.5 rounded-xl font-bold text-sm bg-[#F1A80A] text-[#0B192C] hover:brightness-110 transition-all shadow-[0_0_20px_rgba(241,168,10,0.3)] cursor-pointer"
               >
-                Inscribirme y Activar mi Mes VIP
+                Inscribirme al Curso Presencial
               </button>
+              <a
+                href="https://www.linkedin.com/in/engelberthep"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 py-3.5 rounded-xl font-bold text-sm bg-[#0077B5] text-white hover:brightness-110 transition-all shadow-[0_0_20px_rgba(0,119,181,0.3)] cursor-pointer flex items-center gap-2"
+              >
+                Ver mi LinkedIn
+              </a>
               <div className="flex items-center gap-2 text-xs text-slate-300 bg-white/5 px-4 py-3 rounded-xl border border-white/10">
                 <Phone className="w-4 h-4 text-emerald-400" />
                 <span>WhatsApp Oficial: <strong>{COURSE_PRICING.yapePhoneFormatted}</strong></span>
