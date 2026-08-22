@@ -7,13 +7,14 @@ interface LoginGateProps {
 }
 
 export function LoginGate({ onVerified }: LoginGateProps) {
-  const [code, setCode] = useState('');
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!code.trim()) return;
+    if (!username.trim() || !password) return;
 
     setIsLoading(true);
     setError('');
@@ -22,14 +23,14 @@ export function LoginGate({ onVerified }: LoginGateProps) {
       const res = await fetch('/api/verify-code', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ code: code.trim() })
+        body: JSON.stringify({ username: username.trim(), password })
       });
       const data = await res.json();
 
       if (data.success) {
         onVerified();
       } else {
-        setError(data.error || 'Código inválido. Intente de nuevo.');
+        setError(data.error || 'Credenciales inválidas. Intente de nuevo.');
       }
     } catch (err) {
       setError('Error al verificar el código. Intente de nuevo.');
@@ -57,19 +58,29 @@ export function LoginGate({ onVerified }: LoginGateProps) {
           </div>
           <h1 className="text-2xl md:text-3xl font-bold text-white mb-2 tracking-tight">Acceso Exclusivo</h1>
           <p className="text-slate-400 text-sm">
-            Ingresa tu código de partner de <span className="text-indigo-400 font-semibold">Lifextreme</span> para acceder a la plataforma.
+            Ingresa tu usuario y contraseña de <span className="text-indigo-400 font-semibold">Lifextreme</span> para acceder a la plataforma.
           </p>
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-4">
-          <div>
+          <div className="space-y-3">
             <div className="relative">
               <input 
                 type="text" 
-                value={code}
-                onChange={(e) => setCode(e.target.value.toUpperCase())}
-                placeholder="Ingresa tu código" 
-                className="w-full bg-slate-900/50 border border-slate-700/50 rounded-xl px-5 py-4 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all font-mono text-center tracking-widest text-lg"
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}
+                placeholder="Usuario" 
+                className="w-full bg-slate-900/50 border border-slate-700/50 rounded-xl px-5 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all text-center"
+                disabled={isLoading}
+              />
+            </div>
+            <div className="relative">
+              <input 
+                type="password" 
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                placeholder="Contraseña" 
+                className="w-full bg-slate-900/50 border border-slate-700/50 rounded-xl px-5 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all text-center"
                 disabled={isLoading}
               />
             </div>
@@ -88,7 +99,7 @@ export function LoginGate({ onVerified }: LoginGateProps) {
 
           <button 
             type="submit" 
-            disabled={isLoading || !code.trim()}
+            disabled={isLoading || !username.trim() || !password}
             className="w-full bg-indigo-600 hover:bg-indigo-700 disabled:opacity-50 disabled:cursor-not-allowed text-white font-bold py-4 px-6 rounded-xl transition-all flex items-center justify-center gap-2 shadow-lg shadow-indigo-600/25 group"
           >
             {isLoading ? (

@@ -104,17 +104,22 @@ app.get("/api/health", (req, res) => {
   res.json({ status: "ok", service: "Curso IA para Agencias de Viajes - Lifextreme IA" });
 });
 
-// Dynamic Code Validation Endpoint (Option B)
-const VALID_CODES = ["LIFEXTREME2026", "PARTNERVIP", "LIFEXTREME-IA"];
+// Dynamic User & Password Validation
+const USERS = [
+  { username: "prueba", password: "123" },
+  { username: "admin", password: "lifextreme2026" }
+];
 
 app.post("/api/verify-code", (req, res) => {
-  const { code } = req.body;
-  if (!code) return res.status(400).json({ error: "Código requerido" });
+  const { username, password } = req.body;
+  if (!username || !password) return res.status(400).json({ error: "Usuario y contraseña requeridos" });
   
-  if (VALID_CODES.includes(code.trim().toUpperCase())) {
+  const user = USERS.find(u => u.username.toLowerCase() === username.trim().toLowerCase() && u.password === password);
+
+  if (user) {
     return res.json({ success: true, message: "Acceso concedido" });
   } else {
-    return res.status(401).json({ success: false, error: "Código inválido" });
+    return res.status(401).json({ success: false, error: "Credenciales inválidas" });
   }
 });
 
