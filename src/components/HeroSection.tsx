@@ -209,7 +209,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenCheckout, onOpen
         <div className="flex flex-wrap items-center justify-center gap-2.5 sm:gap-4 mb-10 text-xs sm:text-sm text-slate-200">
           <div className="flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm">
             <CheckCircle2 className="w-4 h-4 text-[#F1A80A] shrink-0" />
-            <span>4 Días • 2.5 Horas Diarias</span>
+            <span>8, 9, 10 y 11 de Septiembre</span>
           </div>
           <div className="flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm">
             <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0" />
