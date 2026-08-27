@@ -20,6 +20,7 @@ export interface SolutionItem {
   gridSpan: string; // e.g. "col-span-12 md:col-span-7"
   demoPrompt?: string;
   bgGradient: string;
+  imageUrl?: string;
 }
 
 export interface CurriculumModule {

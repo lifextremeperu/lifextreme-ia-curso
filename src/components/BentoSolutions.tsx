@@ -75,13 +75,27 @@ export const BentoSolutions: React.FC<BentoSolutionsProps> = ({ onOpenCheckout, 
                 key={solution.id}
                 id={`bento-card-${solution.id}`}
                 onClick={() => setActiveSolution(solution)}
-                className={`${solution.gridSpan} group relative rounded-2xl bg-white/5 p-6 sm:p-7 border border-white/10 hover:border-[#F1A80A]/60 transition-all duration-300 flex flex-col justify-between cursor-pointer hover:shadow-xl hover:shadow-[#F1A80A]/10 overflow-hidden backdrop-blur-md`}
+                className={`${solution.gridSpan} group relative rounded-2xl p-6 sm:p-7 border border-white/10 hover:border-[#F1A80A]/60 transition-all duration-300 flex flex-col justify-between cursor-pointer hover:shadow-xl hover:shadow-[#F1A80A]/10 overflow-hidden backdrop-blur-md min-h-[320px]`}
               >
+                {/* Background Image and Overlays */}
+                {solution.imageUrl ? (
+                  <>
+                    <img 
+                      src={solution.imageUrl} 
+                      alt={solution.title} 
+                      className="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-60 group-hover:scale-110 transition-all duration-700 pointer-events-none z-0"
+                    />
+                    <div className={`absolute inset-0 bg-gradient-to-t ${solution.bgGradient} opacity-90 z-0 pointer-events-none`} />
+                  </>
+                ) : (
+                  <div className="absolute inset-0 bg-white/5 z-0 pointer-events-none" />
+                )}
+
                 {/* Subtle card glow on hover */}
-                <div className="absolute top-0 right-0 w-32 h-32 bg-[#F1A80A]/5 rounded-full blur-2xl group-hover:bg-[#F1A80A]/15 transition-all duration-500 pointer-events-none" />
+                <div className="absolute top-0 right-0 w-32 h-32 bg-[#F1A80A]/5 rounded-full blur-2xl group-hover:bg-[#F1A80A]/15 transition-all duration-500 pointer-events-none z-0" />
 
                 {/* Top Badge & Number */}
-                <div>
+                <div className="relative z-10">
                   <div className="flex items-center justify-between gap-2 mb-4">
                     <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-semibold text-[#F1A80A]">
                       {getIcon(solution.iconName)}
@@ -104,7 +118,7 @@ export const BentoSolutions: React.FC<BentoSolutionsProps> = ({ onOpenCheckout, 
                 </div>
 
                 {/* Bottom Metric & Tools */}
-                <div>
+                <div className="relative z-10">
                   {/* Real Metric Highlight */}
                   <div className="p-3.5 rounded-xl bg-black/40 border border-white/10 mb-4 flex items-center justify-between">
                     <div>

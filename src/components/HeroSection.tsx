@@ -230,7 +230,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenCheckout, onOpen
             className="w-full sm:w-auto relative group overflow-hidden px-8 py-4 sm:py-5 rounded-2xl font-black text-base sm:text-lg text-[#0B192C] bg-[#F1A80A] shadow-[0_0_30px_rgba(241,168,10,0.35)] hover:brightness-110 transition-all duration-300 transform hover:-translate-y-1 active:translate-y-0 cursor-pointer flex items-center justify-center gap-3"
           >
             <span className="relative z-10 flex items-center gap-2 tracking-tight">
-              <span>Transformar mi Agencia Ahora</span>
+              <span>Separar mi Cupo con S/ 50</span>
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1.5 transition-transform" />
             </span>
           </button>

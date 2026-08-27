@@ -7,11 +7,19 @@ import mod5Img from '../assets/images/module_5_video_1787431943093.jpg';
 import mod6Img from '../assets/images/module_6_nocode_1787431957509.jpg';
 import mod7Img from '../assets/images/module_7_scale_1787431970058.jpg';
 
+import bento1Img from '../assets/images/bento_marketing_1787802663454.jpg';
+import bento2Img from '../assets/images/bento_whatsapp_1787802720655.jpg';
+import bento3Img from '../assets/images/bento_quotes_1787802801953.jpg';
+import bento4Img from '../assets/images/bento_database_1787802813462.jpg';
+import bento5Img from '../assets/images/bento_video_1787802839099.jpg';
+import bento6Img from '../assets/images/bento_analysis_1787802850297.jpg';
+import bento7Img from '../assets/images/bento_catalog_1787802864312.jpg';
+
 export const COURSE_PRICING = {
   currencySymbol: 'S/',
   currencyCode: 'PEN',
   regularPrice: 490,
-  discountedPrice: 147,
+  discountedPrice: 250,
   discountPercentage: '70% OFF',
   usdEquivalent: '$39 USD',
   yapePhone: '958050928',
@@ -37,6 +45,7 @@ export const SEVEN_SOLUTIONS: SolutionItem[] = [
     gridSpan: 'col-span-12 lg:col-span-7',
     demoPrompt: 'Crea 3 ángulos de copys para un paquete a Cancún Todo Incluido 5D/4N enfocado en parejas jóvenes peruanas con llamado a la acción a WhatsApp.',
     bgGradient: 'from-amber-500/10 via-slate-900/80 to-slate-950/90',
+    imageUrl: bento1Img,
   },
   {
     id: 'solucion-2',
@@ -52,6 +61,7 @@ export const SEVEN_SOLUTIONS: SolutionItem[] = [
     gridSpan: 'col-span-12 lg:col-span-5',
     demoPrompt: 'Configuración de nodo condicional para detectar presupuesto del viajero y enviar PDF del destino automáticamente.',
     bgGradient: 'from-cyan-500/10 via-slate-900/80 to-slate-950/90',
+    imageUrl: bento2Img,
   },
   {
     id: 'solucion-3',
@@ -67,6 +77,7 @@ export const SEVEN_SOLUTIONS: SolutionItem[] = [
     gridSpan: 'col-span-12 lg:col-span-4',
     demoPrompt: 'Cotiza itinerario familiar a Cartagena para 2 adultos y 1 niño (6 años), 4 noches, hotel 4 estrellas con traslados y tour a Islas del Rosario.',
     bgGradient: 'from-blue-500/10 via-slate-900/80 to-slate-950/90',
+    imageUrl: bento3Img,
   },
   {
     id: 'solucion-4',
@@ -82,6 +93,7 @@ export const SEVEN_SOLUTIONS: SolutionItem[] = [
     gridSpan: 'col-span-12 lg:col-span-4',
     demoPrompt: '¿Cuáles son los requisitos de visa y vacunas actuales para ciudadanos peruanos viajando a Egipto y Turquía?',
     bgGradient: 'from-amber-400/10 via-slate-900/80 to-slate-950/90',
+    imageUrl: bento4Img,
   },
   {
     id: 'solucion-5',
@@ -97,6 +109,7 @@ export const SEVEN_SOLUTIONS: SolutionItem[] = [
     gridSpan: 'col-span-12 lg:col-span-4',
     demoPrompt: 'Genera un guión de 30 segundos con gancho de escasez: "3 errores fatales que cometen los peruanos al viajar a Europa por primera vez".',
     bgGradient: 'from-purple-500/10 via-slate-900/80 to-slate-950/90',
+    imageUrl: bento5Img,
   },
   {
     id: 'solucion-6',
@@ -112,6 +125,7 @@ export const SEVEN_SOLUTIONS: SolutionItem[] = [
     gridSpan: 'col-span-12 lg:col-span-6',
     demoPrompt: 'Analiza los 5 destinos de playa internacionales con mayor crecimiento de búsquedas en Perú para el próximo feriado largo.',
     bgGradient: 'from-emerald-500/10 via-slate-900/80 to-slate-950/90',
+    imageUrl: bento6Img,
   },
   {
     id: 'solucion-7',
@@ -127,6 +141,7 @@ export const SEVEN_SOLUTIONS: SolutionItem[] = [
     gridSpan: 'col-span-12 lg:col-span-6',
     demoPrompt: 'Crea la estructura de un itinerario interactivo de 7 días "Ruta Clásica Japón" con hoteles recomendados, tren bala y tips gastronómicos.',
     bgGradient: 'from-cyan-500/10 via-slate-900/80 to-slate-950/90',
+    imageUrl: bento7Img,
   },
 ];
 

@@ -113,7 +113,7 @@ export const PricingSection: React.FC<PricingProps> = ({ onOpenCheckout }) => {
               onClick={onOpenCheckout}
               className="w-full py-4 sm:py-5 px-6 rounded-2xl font-bold text-base sm:text-lg text-[#0B192C] bg-[#F1A80A] hover:brightness-110 transition-all transform hover:scale-[1.02] active:scale-100 flex items-center justify-center gap-2 shadow-[0_0_25px_rgba(241,168,10,0.3)] cursor-pointer mb-4"
             >
-              <span>Inscribirme con Yape Ahora (S/ 147)</span>
+              <span>Separar mi cupo con S/ 50 (Yape)</span>
               <ArrowRight className="w-5 h-5" />
             </button>
 
