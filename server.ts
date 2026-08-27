@@ -108,7 +108,8 @@ app.get("/api/health", (req, res) => {
 // Dynamic User & Password Validation
 const USERS = [
   { username: "prueba", password: "123" },
-  { username: "admin", password: "lifextreme2026" }
+  { username: "admin", password: "lifextreme2026" },
+  { username: "agencia", password: "vip2026" }
 ];
 
 app.post("/api/verify-code", (req, res) => {
